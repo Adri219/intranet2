@@ -1,0 +1,150 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 36px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body {
+	background-color: #00CCFF;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="Layer1" style="position:absolute; left:301px; top:99px; width:481px; height:276px; z-index:1">
+  <script type="text/javascript">
+
+// Message Transformer script- By ViruSoft.net (http://www.virusoft.net)
+// Visit JavaScript Kit (http://www.javascriptkit.com)
+// for free JavaScript tutorials and scripts
+// This notice must stay intact for use
+
+
+// www.virusoft.net
+function remember(){
+originalText = "";
+originalText = document.textConvForm.textConvArea.value;}
+function convert2ALLCAPS(){
+original = document.textConvForm.textConvArea.value;
+ALLCAPS = original.toUpperCase();
+document.textConvForm.textConvArea.value = ALLCAPS;}
+function convert2nocaps(){
+original = document.textConvForm.textConvArea.value;
+nocaps = original.toLowerCase();
+document.textConvForm.textConvArea.value = nocaps;}
+function convert2Hacker(){
+original = document.textConvForm.textConvArea.value;
+normal = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+hacker = ["@","ß","¢","Ð","€","ƒ","ç","|¬","¡","¿","/<","|","^^","ñ","¤","þ","¶","®","§","†","ü",">","%%%","×","¥","Ž"];
+haxored = original;
+for (i = 0; i < normal.length; i++){
+haxored = haxored.replace(RegExp(normal[i],"gi"),hacker[i]);}
+haxored = haxored.replace(/%%%/gi,"vv");
+document.textConvForm.textConvArea.value = haxored;}
+function convert2PigLatin(){
+original = document.textConvForm.textConvArea.value;
+noriginal = original;
+noriginal = noriginal.replace(/\"/gi,"");
+working = new Array;
+working = noriginal.split(" ");
+for (i = 0; i < working.length; i++){
+firstChar = working[i].charAt(0);
+secondChar = working[i].charAt(1);
+thirdChar = working[i].charAt(2);
+wordLength = working[i].length;
+punctuation = ["!","?",";",":",".",","];
+upCaseLet = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+if (firstChar == "a" || firstChar == "e" || firstChar == "i" || firstChar == "o" || firstChar == "u" || firstChar == "y" || firstChar == "A" || firstChar == "E" || firstChar == "I" || firstChar == "O" || firstChar == "U" || firstChar == "Y"){working[i]=working[i]+"way";}
+else if (firstChar == "q" || firstChar == "Q" && secondChar == "u" || secondChar == "U"){
+newWord="";for (l = 1; l < working[i].length; l++){newWord=newWord+working[i].charAt(l+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}
+else if(isNaN(working[i])){
+if (secondChar != "a" && secondChar != "e" && secondChar != "i" && secondChar != "o" && secondChar != "u" && secondChar != "A" && secondChar != "E" && secondChar != "I" && secondChar != "O" && secondChar != "U"){
+if (thirdChar != "a" && thirdChar != "e" && thirdChar != "i" && thirdChar != "o" && thirdChar != "u" && thirdChar != "A" && thirdChar != "E" && thirdChar != "I" && thirdChar != "O" && thirdChar != "U"){
+newWord="";for (m = 2; m < working[i].length; m++){newWord=newWord+working[i].charAt(m+1);}
+working[i]=newWord+firstChar+secondChar+thirdChar+"ay";}
+else{newWord="";for (k = 1; k < working[i].length; k++){newWord=newWord+working[i].charAt(k+1);}
+working[i]=newWord+firstChar+secondChar+"ay";}}
+else{newWord="";for (j = 0; j < working[i].length; j++){newWord=newWord+working[i].charAt(j+1);}
+working[i]=newWord+firstChar+"ay";}}
+for (q = 0; q < punctuation.length; q++){
+if(working[i].indexOf(punctuation[q])!= -1){
+working[i] = working[i].replace(/\!/gi,"");
+working[i] = working[i].replace(/\?/gi,"");
+working[i] = working[i].replace(/\;/gi,"");
+working[i] = working[i].replace(/\:/gi,"");
+working[i] = working[i].replace(/\./gi,"");
+working[i] = working[i].replace(/\,/gi,"");
+if(punctuation[q] == ","){working[i] = working[i]+"%%%";}
+else{working[i] = working[i]+punctuation[q];}}}
+for (n = 0; n < upCaseLet.length; n++){
+if(working[i].indexOf(upCaseLet[n])!= -1){
+working[i] = working[i].toLowerCase();
+newWord="";for (o = 0; o < working[i].length; o++){
+newWord=newWord+working[i].charAt(o+1);}
+working[i] = working[i].charAt(0).toUpperCase()+newWord;}}}
+working = working.toString();
+working = working.replace(/,/gi," ");
+pigLatin = working.replace(/%%%/gi,",");
+document.textConvForm.textConvArea.value = pigLatin;}
+function convert2drawkcaB(){
+original = document.textConvForm.textConvArea.value;
+drawkcabWork = original.split("");
+drawkcabWork = drawkcabWork.reverse();
+drawkcab = "";
+for (i = 0; i < drawkcabWork.length; i++){
+drawkcab = drawkcab+drawkcabWork[i];}
+document.textConvForm.textConvArea.value = drawkcab;}
+function reSet(){
+document.textConvForm.textConvArea.value = originalText;}
+function copy(){
+copied = document.textConvForm.textConvArea.createTextRange();
+copied.execCommand("Copy");}
+function clearBox(){
+document.textConvForm.textConvArea.value = "";
+document.textConvForm.textConvArea.focus();}
+</script>
+
+<table width="470" height="250" cellpadding=2 cellspacing=1 bgColor=777777><td width="168"><tr><td>
+<form name="textConvForm">
+<textarea name="textConvArea" rows=10 cols=30 wrap=soft>
+
+
+</textarea></td><td>
+<input type="button" value="Todo en mayuscula" onClick="remember();convert2ALLCAPS()"><br />
+<input type="button" value="Todo en minuscula" onClick="remember();convert2nocaps()"><br />
+<input type="button" value="Hackerize" onClick="remember();convert2Hacker()"><br />
+<input type="button" value="Latin" onClick="remember();convert2PigLatin()"><br />
+<input type="button" value="Alrevez" onClick="remember();convert2drawkcaB()"><br />
+
+<input type="button" value="Deshacer(una vez)" onClick="reSet()"><br />
+<input type="button" value="Copar" onClick="copy()"> 
+<input type="button" value="Eliminar" onClick="remember();clearBox()">
+</td></tr></form></table>
+
+<p>&nbsp;</p>
+</div>
+<div id="Layer2" style="position:absolute; left:271px; top:24px; width:539px; height:56px; z-index:2">
+  <div align="center" class="style1">TRASFORMA TUS MENSAJES </div>
+</div>
+<div id="Layer3" style="position:absolute; left:19px; top:68px; width:233px; height:220px; z-index:3"><img src="descarga.jpg" width="259" height="194"></div>
+</body>
+</html>
